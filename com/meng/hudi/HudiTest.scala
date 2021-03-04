@@ -28,5 +28,7 @@ object HudiTest {
       .option(HoodieWriteConfig.TABLE_NAME, "ods.ods_user_event_hudi")
       .mode(SaveMode.Append)
       .save("/user/hudi/lake/ods.db/ods_user_event_hudi")
+
+
   }
 }
