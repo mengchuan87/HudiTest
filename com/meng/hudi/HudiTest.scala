@@ -15,6 +15,7 @@ object HudiTest {
 
     val sql = "select * from ods.ods_user_event"
     val df: DataFrame = sss.sql(sql)
+    
 
     df.write.format("org.apache.hudi")
       .option(DataSourceWriteOptions.RECORDKEY_FIELD_OPT_KEY, "recordKey")
